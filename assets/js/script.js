@@ -53,6 +53,17 @@ function searchDigimon() {
 
 searchButton.addEventListener('click', searchDigimon);
 
+//retira el texto de las cards
 
+var cards = document.querySelectorAll('.card');
 
-
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        var text = card.querySelector('.card-text');
+        if (text.style.display === 'none') {
+            text.style.display = 'block';
+        } else {
+            text.style.display = 'none';
+        }
+    });
+});
