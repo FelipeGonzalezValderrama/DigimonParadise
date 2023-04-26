@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital@1&display=swap');
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #ef3535 !important;
+}
+
+
+.zoom-img {
+    transition: transform .3s ease-in-out;
+}
+
+.zoom-img:hover {
+    transform: scale(2.5);
+}
